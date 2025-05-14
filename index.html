@@ -236,6 +236,90 @@
             color: var(--primary);
         }
         
+        /* About Us Section */
+        .about {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .about-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about h2 {
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .about-features {
+            margin-top: 30px;
+        }
+
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .feature-icon {
+            background: var(--primary);
+            color: var(--white);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 768px) {
+            .about {
+                padding: 60px 0;
+            }
+            
+            .about-container {
+                flex-direction: column;
+            }
+            
+            .about-image {
+                order: -1;
+            }
+        }
+
         /* Services Section */
         .services {
             background: var(--light-gray);
@@ -661,6 +745,55 @@
             <div class="hero-btns">
                 <a href="#products" class="btn">Browse In-Stock Items</a>
                 <a href="#alipay" class="btn btn-outline">Fund Your Alipay Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-content">
+                    <h2>About Makers Import</h2>
+                    <p>Founded in 2020, Makers Import has become a trusted bridge between Ghanaian businesses and Chinese manufacturers. We specialize in making international trade simple, secure, and cost-effective for our clients.</p>
+                    <p>Our team based in both Ghana and China handles every step of the process - from sourcing quality products to managing logistics and customs clearance.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h3>Verified Suppliers</h3>
+                                <p>We personally vet all manufacturers to ensure quality and reliability</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-shipping-fast"></i>
+                            </div>
+                            <div>
+                                <h3>Fast Shipping</h3>
+                                <p>Established relationships with shipping companies for timely delivery</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div>
+                                <h3>Secure Payments</h3>
+                                <p>Multiple payment options with complete transaction transparency</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Makers Import Team">
+                </div>
             </div>
         </div>
     </section>
