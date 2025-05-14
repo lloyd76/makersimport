@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makers Import - China to Ghana Trade Experts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Global Styles */
+        :root {
+            --primary: #6a0dad;
+            --primary-dark: #4b0082;
+            --white: #ffffff;
+            --light-gray: #f9f9f9;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3 {
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+        }
+        
+        a {
+            text-decoration: none;
+            color: var(--primary);
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: var(--white);
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--primary);
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            color: var(--primary-dark);
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: var(--white);
+            padding: 180px 0 100px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+        
+        .hero-btns {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .hero-btns .btn {
+            background: var(--white);
+            color: var(--primary);
+        }
+        
+        .hero-btns .btn:hover {
+            background: rgba(255, 255, 255, 0.9);
+        }
+        
+        .hero-btns .btn-outline {
+            background: transparent;
+            border-color: var(--white);
+            color: var(--white);
+        }
+        
+        .hero-btns .btn-outline:hover {
+            background: var(--white);
+            color: var(--primary);
+        }
+        
+        /* Services Section */
+        .services {
+            background: var(--light-gray);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .service-card h3 {
+            margin-bottom: 15px;
+        }
+        
+        /* Alipay Section */
+        .alipay {
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        .alipay .section-title {
+            color: var(--white);
+        }
+        
+        .alipay .section-title:after {
+            background: var(--white);
+        }
+        
+        .alipay-content {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        
+        .alipay-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .alipay-steps {
+            margin: 30px 0;
+        }
+        
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .step-number {
+            background: var(--white);
+            color: var(--primary);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .alipay-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        
+        .alipay-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Products Section */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .product-card {
+            background: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-image {
+            height: 200px;
+            background: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .product-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+        
+        .product-info {
+            padding: 20px;
+        }
+        
+        .product-info h3 {
+            margin-bottom: 10px;
+        }
+        
+        /* How It Works Section */
+        .steps {
+            background: var(--light-gray);
+        }
+        
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .step-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .step-number-big {
+            background: var(--primary);
+            color: var(--white);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+        
+        /* Testimonials Section */
+        .testimonials {
+            background: var(--white);
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .testimonial-card {
+            background: var(--light-gray);
+            padding: 30px;
+            border-radius: 10px;
+            position: relative;
+        }
+        
+        .testimonial-card:before {
+            content: '"';
+            font-size: 5rem;
+            color: var(--primary);
+            opacity: 0.1;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+        
+        .testimonial-text {
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: var(--primary-dark);
+        }
+        
+        /* FAQ Section */
+        .faq {
+            background: var(--light-gray);
+        }
+        
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .faq-question {
+            padding: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 20px;
+            max-height: 500px;
+        }
+        
+        /* Contact Section */
+        .contact {
+            background: var(--primary-dark);
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .contact .section-title {
+            color: var(--white);
+        }
+        
+        .contact .section-title:after {
+            background: var(--white);
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .contact-method i {
+            font-size: 1.5rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .social-links a {
+            color: var(--white);
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            transform: translateY(-5px);
+        }
+        
+        /* Footer */
+        footer {
+            background: #222;
+            color: #aaa;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        /* WhatsApp Float Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.8rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-float:hover {
+            background: #128C7E;
+            transform: scale(1.1);
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header-container {
+                padding: 15px 0;
+            }
+            
+            nav {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: var(--white);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                transform: translateY(-150%);
+                transition: transform 0.3s ease;
+            }
+            
+            nav.active {
+                transform: translateY(0);
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero {
+                padding: 150px 0 80px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            section {
+                padding: 60px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/233YOURNUMBERHERE" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <!-- Add your logo image here -->
+                <img src="your-logo.png" alt="Makers Import Logo">
+                <span class="logo-text">Makers Import</span>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#alipay">Alipay</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Your Trusted Partner for Sourcing Goods from China to Ghana!</h1>
+            <p>Procurement • Alipay Payments • Preorders • Wholesale & Retail</p>
+            <div class="hero-btns">
+                <a href="#products" class="btn">Browse In-Stock Items</a>
+                <a href="#alipay" class="btn btn-outline">Fund Your Alipay Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>How We Simplify China-Ghana Trade</h2>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Procurement & Sourcing</h3>
+                    <p>We handle the entire process—from factory vetting to quality checks and logistics.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3>Alipay Account Funding</h3>
+                    <p>Need to pay suppliers? We top up your Alipay account quickly and securely.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3>Preorder Requests</h3>
+                    <p>Want something specific? We'll source it for you with transparent terms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alipay Section -->
+    <section class="alipay" id="alipay">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pay Chinese Suppliers Easily</h2>
+                <p>Fund Your Alipay Account Today!</p>
+            </div>
+            
+            <div class="alipay-content">
+                <div class="alipay-text">
+                    <p>Many Ghanaian buyers struggle to pay Chinese suppliers directly. We solve this problem by offering fast, secure Alipay funding services with competitive rates.</p>
+                    
+                    <div class="alipay-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div>
+                                <h3>Send Your Payment</h3>
+                                <p>Transfer GHS/USD to Makers Import via mobile money or bank transfer.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div>
+                                <h3>Share Your Alipay Details</h3>
+                                <p>Provide us with your Alipay account email or phone number.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div>
+                                <h3>Receive Funds</h3>
+                                <p>We'll top up your Alipay within 24 hours (usually faster).</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://wa.me/233YOURNUMBERHERE" class="btn" target="_blank">Start Funding Now</a>
+                </div>
+                
+                <div class="alipay-image">
+                    <!-- Add Alipay related image here -->
+                    <img src="alipay-image.jpg" alt="Alipay Funding Service">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Current In-Stock Items</h2>
+                <p>Ready for immediate purchase in Ghana</p>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="product-placeholder.jpg" alt="Product 1">
+                    </div>
+                    <div class="product-info">
+                        <h3>Smartphones</h3>
+                        <p>Various models available</p>
+                        <a href="https://wa.me/233YOURNUMBERHERE" class="btn" target="_blank">Contact for Price</a>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="product-placeholder.jpg" alt="Product 2">
+                    </div>
+                    <div class="product-info">
+                        <h3>Home Appliances</h3>
+                        <p>Blenders, microwaves, etc.</p>
+                        <a href="https://wa.me/233YOURNUMBERHERE" class="btn" target="_blank">Contact for Price</a>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="product-placeholder.jpg" alt="Product 3">
+                    </div>
+                    <div class="product-info">
+                        <h3>Electronics</h3>
+                        <p>Accessories and gadgets</p>
+                        <a href="https://wa.me/233YOURNUMBERHERE" class="btn" target="_blank">Contact for Price</a>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="product-placeholder.jpg" alt="Product 4">
+                    </div>
+                    <div class="product-info">
+                        <h3>Fashion Items</h3>
+                        <p>Clothing and accessories</p>
+                        <a href="https://wa.me/233YOURNUMBERHERE" class="btn" target="_blank">Contact for Price</a>
+                    </div>
+                </div>
+            </div>
+            
+            <p style="text-align: center; margin-top: 40px;">
+                <strong>Don't see what you need?</strong> We can source it for you! 
+                <a href="#contact" class="btn btn-outline" style="margin-top: 15px;">Request a Custom Order</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="steps" id="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>How It Works</h2>
+                <p>3 simple steps to get your goods from China to Ghana</p>
+            </div>
+            
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number-big">1</div>
+                    <h3>Send Your Request</h3>
+                    <p>Contact us via WhatsApp, email, or our contact form with details of what you need.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number-big">2</div>
+                    <h3>Confirm Quote & Payment</h3>
+                    <p>We'll send you a detailed quote. Once approved, make payment via your preferred method.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number-big">3</div>
+                    <h3>We Deliver</h3>
+                    <p>We handle all logistics and deliver to your doorstep or preferred pickup location in Ghana.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Clients Say</h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        Makers Import helped me safely import 100 smartphones from Shenzhen. Their quality control saved me from receiving defective products!
+                    </div>
+                    <div class="testimonial-author">- Kwame, Accra</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        The Alipay funding service is a game-changer! I paid my supplier within hours instead of waiting days for bank transfers.
+                    </div>
+                    <div class="testimonial-author">- Ama, Kumasi</div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        I needed a specific industrial part that wasn't available locally. Makers Import sourced it and had it delivered in 3 weeks.
+                    </div>
+                    <div class="testimonial-author">- Yaw, Takoradi</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How do I know you're not a scam?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We provide: 
+                        <ul>
+                            <li>Supplier verification reports</li>
+                            <li>Order tracking numbers</li>
+                            <li>Local pickup verification in Ghana</li>
+                            <li>References from past clients</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What's your minimum order quantity (MOQ)?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        It depends on the product:
+                        <ul>
+                            <li>Electronics: Typically 5-10 units</li>
+                            <li>Clothing: 20-50 pieces per design</li>
+                            <li>Custom items: Case by case basis</li>
+                        </ul>
+                        Contact us for specific MOQ details.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        How long does shipping take?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Standard shipping to Ghana takes 3-4 weeks by sea (most cost-effective) or 7-10 days by air (more expensive). Exact timing depends on:
+                        <ul>
+                            <li>Product availability</li>
+                            <li>Shipping method</li>
+                            <li>Customs clearance</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What payment methods do you accept?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We accept:
+                        <ul>
+                            <li>Mobile Money (MTN, Vodafone, AirtelTigo)</li>
+                            <li>Bank transfers (Ghanaian banks)</li>
+                            <li>Alipay (for funding service)</li>
+                            <li>Cash on delivery (limited cases)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch to start your import journey</p>
+            </div>
+            
+            <div class="contact-info">
+                <div class="contact-method">
+                    <i class="fas fa-phone"></i>
+                    <span>+233 YOUR NUMBER HERE</span>
+                </div>
+                
+                <div class="contact-method">
+                    <i class="fas fa-envelope"></i>
+                    <span>hello@makersimport.com</span>
+                </div>
+                
+                <div class="contact-method">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Accra, Ghana</span>
+                </div>
+            </div>
+            
+            <div style="max-width: 600px; margin: 0 auto;">
+                <a href="https://wa.me/233YOURNUMBERHERE" class="btn" target="_blank" style="display: block; margin-bottom: 20px;">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+                
+                <p>Or send us a message directly:</p>
+                
+                <form id="contactForm" style="margin-top: 20px;">
+                    <input type="text" placeholder="Your Name" required style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 5px; border: none;">
+                    <input type="email" placeholder="Your Email" style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 5px; border: none;">
+                    <input type="tel" placeholder="Your Phone Number" required style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 5px; border: none;">
+                    <textarea placeholder="Your Message" required style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 5px; border: none; min-height: 120px;"></textarea>
+                    <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                </form>
+            </div>
+            
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Makers Import. All rights reserved.</p>
+            <p>Your trusted China-Ghana trade partner.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mainNav = document.getElementById('mainNav');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+            mobileMenuBtn.innerHTML = mainNav.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                if (this.getAttribute('href') === '#') return;
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (mainNav.classList.contains('active')) {
+                        mainNav.classList.remove('active');
+                        mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                    }
+                }
+            });
+        });
+        
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            
+            question.addEventListener('click', () => {
+                // Close all other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+        
+        // Form Submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Thank you for your message! We will contact you shortly.');
+                contactForm.reset();
+            });
+        }
+        
+        // Sticky Header on Scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
