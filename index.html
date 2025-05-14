@@ -155,24 +155,58 @@
             cursor: pointer;
         }
         
-        /* Hero Section */
+        /* Hero Section with Shipping Container Image */
         .hero {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
             color: var(--white);
-            padding: 180px 0 100px;
             text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(106, 13, 173, 0.7), rgba(75, 0, 130, 0.7));
+            z-index: 1;
+        }
+        
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            padding: 0 20px;
         }
         
         .hero h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             margin-bottom: 20px;
             color: var(--white);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
         }
         
         .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
+            font-size: 1.3rem;
             margin: 0 auto 40px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
         }
         
         .hero-btns {
@@ -274,7 +308,7 @@
         
         .step-number {
             background: var(--white);
-            color: #070808;
+            color: var(--primary-dark);
             width: 30px;
             height: 30px;
             border-radius: 50%;
@@ -299,10 +333,9 @@
         }
 
         .alipay h2,
-        .alipay h3{
-            color: black;
+        .alipay h3 {
+            color: var(--white);
         }
-
         
         /* Products Section */
         .products-grid {
@@ -569,11 +602,17 @@
             }
             
             .hero {
-                padding: 150px 0 80px;
+                height: auto;
+                min-height: auto;
+                padding: 120px 0 80px;
             }
             
             .hero h1 {
                 font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
             }
             
             section {
@@ -613,9 +652,10 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Shipping Container Background -->
     <section class="hero">
-        <div class="container">
+        <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Shipping containers" class="hero-bg">
+        <div class="hero-content">
             <h1>Your Trusted Partner for Sourcing Goods from China to Ghana!</h1>
             <p>Procurement • Alipay Payments • Preorders • Wholesale & Retail</p>
             <div class="hero-btns">
